@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>DramaClaw</title>
 
 <style>
@@ -38,7 +39,7 @@ nav a {
 }
 
 .hero {
-    padding: 70px 7%;
+    padding: 75px 7%;
     text-align: center;
     background: linear-gradient(135deg, #17172e, #30154f);
 }
@@ -49,8 +50,8 @@ nav a {
 }
 
 .hero p {
-    color: #d5d5df;
     font-size: 18px;
+    color: #d5d5df;
 }
 
 section {
@@ -59,22 +60,22 @@ section {
 
 section h2 {
     font-size: 32px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .character-group {
-    margin-bottom: 45px;
+    margin-bottom: 50px;
 }
 
 .character-group h3 {
-    font-size: 24px;
-    margin-bottom: 18px;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
 .characters {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    gap: 22px;
 }
 
 .character {
@@ -86,20 +87,22 @@ section h2 {
 
 .character img {
     width: 100%;
-    height: 280px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
+    display: block;
     background: #252535;
 }
 
 .character h4 {
-    font-size: 20px;
+    font-size: 21px;
     margin-top: 15px;
 }
 
 .character p {
     color: #aaaabb;
     margin-top: 7px;
+    line-height: 1.5;
 }
 
 footer {
@@ -108,13 +111,265 @@ footer {
     background: #111122;
     color: #888899;
 }
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 23px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .character img {
+        height: 320px;
+    }
+}
 </style>
 </head>
 
 <body>
 
 <header>
+
     <div class="logo">🎬 DramaClaw</div>
 
     <nav>
         <a href="#">Home</a>
+        <a href="#characters">Characters</a>
+        <a href="#about">About</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<div class="hero">
+
+    <h1>DramaClaw</h1>
+
+    <p>
+        Animated stories, exciting characters,
+        love, comedy and mystery.
+    </p>
+
+</div>
+
+
+<!-- CHARACTERS -->
+
+<section id="characters">
+
+    <h2>DramaClaw Characters</h2>
+
+
+    <!-- MAIN CHARACTERS -->
+
+    <div class="character-group">
+
+        <h3>Main Characters</h3>
+
+        <div class="characters">
+
+
+            <!-- ROHAN -->
+
+            <div class="character">
+
+                <img
+                    src="https://github.com/ronshaikh65-max/dramaclaw/blob/main/file_000000006b788207b4ef9a3e6bcb607b.png?raw=true"
+                    alt="Rohan"
+                >
+
+                <h4>Rohan</h4>
+
+                <p>
+                    Main Character
+                </p>
+
+            </div>
+
+
+            <!-- BHAGYASHRI -->
+
+            <div class="character">
+
+                <img
+                    src="https://github.com/ronshaikh65-max/dramaclaw/blob/main/file_00000000b9a88207b929be800427abd4.png?raw=true"
+                    alt="Bhagyashri"
+                >
+
+                <h4>Bhagyashri</h4>
+
+                <p>
+                    Main Character
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FRIENDS -->
+
+    <div class="character-group">
+
+        <h3>Friends</h3>
+
+        <div class="characters">
+
+
+            <!-- SIRAJ -->
+
+            <div class="character">
+
+                <img
+                    src="https://github.com/ronshaikh65-max/dramaclaw/blob/main/file_000000000ee08207b5aa508cd41e6345.png?raw=true"
+                    alt="Siraj"
+                >
+
+                <h4>Siraj</h4>
+
+                <p>
+                    Rohan's Friend
+                </p>
+
+            </div>
+
+
+            <!-- VAIDI -->
+
+            <div class="character">
+
+                <img
+                    src="https://github.com/ronshaikh65-max/dramaclaw/blob/main/file_000000002ac882119187790d7883c7ad.png?raw=true"
+                    alt="Vaidi"
+                >
+
+                <h4>Vaidi</h4>
+
+                <p>
+                    Character
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BHAGYASHRI FAMILY -->
+
+    <div class="character-group">
+
+        <h3>Bhagyashri's Family</h3>
+
+        <div class="characters">
+
+
+            <!-- MOHAN -->
+
+            <div class="character">
+
+                <img
+                    src="https://github.com/ronshaikh65-max/dramaclaw/blob/main/file_0000000031b08207acee1e48aeac3bdc.png?raw=true"
+                    alt="Mohan"
+                >
+
+                <h4>Mohan</h4>
+
+                <p>
+                    Bhagyashri's Younger Brother
+                </p>
+
+            </div>
+
+
+            <!-- POOJA -->
+
+            <div class="character">
+
+                <img
+                    src="https://github.com/ronshaikh65-max/dramaclaw/blob/main/file_00000000e9d88207af95dcdea205ba22.png?raw=true"
+                    alt="Pooja"
+                >
+
+                <h4>Pooja</h4>
+
+                <p>
+                    Character
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- TEACHERS -->
+
+    <div class="character-group">
+
+        <h3>Teachers</h3>
+
+        <div class="characters">
+
+
+            <!-- TEACHER -->
+
+            <div class="character">
+
+                <img
+                    src="https://github.com/ronshaikh65-max/dramaclaw/blob/main/file_000000005cfc821186d9720ba82b8bed.png?raw=true"
+                    alt="Teacher"
+                >
+
+                <h4>Teacher</h4>
+
+                <p>
+                    School Teacher
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <h2>About DramaClaw</h2>
+
+    <p>
+        DramaClaw is an animation and web-series project
+        focused on original stories, characters, love,
+        comedy and mystery.
+    </p>
+
+</section>
+
+
+<footer>
+
+    © 2026 DramaClaw. All rights reserved.
+
+</footer>
+
+
+</body>
+</html>
