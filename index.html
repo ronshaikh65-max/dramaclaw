@@ -38,37 +38,19 @@ nav a {
 }
 
 .hero {
-    min-height: 70vh;
-    padding: 90px 7%;
-    display: flex;
-    align-items: center;
+    padding: 70px 7%;
+    text-align: center;
     background: linear-gradient(135deg, #17172e, #30154f);
 }
 
-.hero-content {
-    max-width: 650px;
-}
-
 .hero h1 {
-    font-size: 58px;
-    margin-bottom: 18px;
+    font-size: 52px;
+    margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 19px;
-    line-height: 1.6;
     color: #d5d5df;
-    margin-bottom: 28px;
-}
-
-.button {
-    display: inline-block;
-    padding: 14px 28px;
-    background: #7c3aed;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: bold;
+    font-size: 18px;
 }
 
 section {
@@ -80,26 +62,44 @@ section h2 {
     margin-bottom: 25px;
 }
 
-.cards {
+.character-group {
+    margin-bottom: 45px;
+}
+
+.character-group h3 {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.characters {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 
-.card {
+.character {
     background: #171725;
     border-radius: 15px;
-    padding: 25px;
-    min-height: 150px;
+    padding: 15px;
+    overflow: hidden;
 }
 
-.card h3 {
-    margin-bottom: 12px;
+.character img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #252535;
 }
 
-.card p {
+.character h4 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.character p {
     color: #aaaabb;
-    line-height: 1.5;
+    margin-top: 7px;
 }
 
 footer {
@@ -118,57 +118,3 @@ footer {
 
     <nav>
         <a href="#">Home</a>
-        <a href="#shows">Shows</a>
-        <a href="#about">About</a>
-    </nav>
-</header>
-
-<div class="hero">
-    <img src="https://github.com/ronshaikh65-max/dramaclaw/blob/main/file_000000006b788207b4ef9a3e6bcb607b.png?raw=true" alt="Rohan">
-    <div class="hero-content">
-        <h1>DramaClaw</h1>
-        <p>
-            Discover animated stories, exciting characters,
-            drama, comedy and mystery — all in one place.
-        </p>
-
-        <a class="button" href="#shows">Explore Shows</a>
-    </div>
-</div>
-
-<section id="shows">
-    <h2>Featured Shows</h2>
-
-    <div class="cards">
-        <div class="card">
-            <h3>🎭 School Stories</h3>
-            <p>Comedy, friendship, love and unexpected mysteries.</p>
-        </div>
-
-        <div class="card">
-            <h3>🔍 Mystery</h3>
-            <p>Follow characters as they uncover hidden secrets.</p>
-        </div>
-
-        <div class="card">
-            <h3>❤️ Love & Drama</h3>
-            <p>Emotional stories filled with relationships and memorable moments.</p>
-        </div>
-    </div>
-</section>
-
-<section id="about">
-    <h2>About DramaClaw</h2>
-
-    <p>
-        DramaClaw is an animation and web-series project
-        focused on original stories and characters.
-    </p>
-</section>
-
-<footer>
-    © 2026 DramaClaw. All rights reserved.
-</footer>
-
-</body>
-</html>
